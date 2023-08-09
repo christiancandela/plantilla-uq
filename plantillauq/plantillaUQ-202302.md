@@ -20,6 +20,11 @@ style: |
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
   }
+  .rows {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
   .texto:after {
     content: 'Titulo';
   }
@@ -90,7 +95,7 @@ _footer: ''
 
 <style scoped>
 .texto:after {
-    content: 'Mi Titulo';
+    content: 'Titulo temporal';
   }
 </style>
 
@@ -98,12 +103,11 @@ _footer: ''
 
 ---
 
-<style scoped>
+<style >
 .texto:after {
-    content: 'Mi Titulo';
+    content: 'Fijanfo un Titulo';
   }
 </style>
-
 
 ## Prueba 1
 
@@ -111,12 +115,12 @@ _footer: ''
 
 <style scoped>
 .texto:after {
-    content: 'Mi Titulo';
+    content: 'Imagen flotante';
   }
 </style>
 
 
-## Prueba 2
+## Imagen flotante
 
 - uno
 - dos
@@ -135,49 +139,89 @@ _footer: ''
 
 <style >
 .texto:after {
-    content: 'Fijanfo un Titulo';
+    content: 'Dos columnas con texto a la derecha';
   }
 </style>
 
 
 <div class="columns">
-<div>
+  <div>
 
+  ![](imagen.png)
+  </div>
+  <div>
 
+  ## Dos columnas con texto a la derecha
 
-![](imagen.png)
+  - 1
+  - 2
+
+  </div>
 </div>
-<div>
 
-## Prueba 3
+---
 
-- 1
-- 2
+<style >
+.texto:after {
+    content: 'Dos columnas con texto a la izquierda';
+  }
+</style>
 
-</div>
+<div class="columns">
+  <div>
+
+  ## Dos columnas con texto a la izquierda
+
+  - puedad  ds fadfas df f sfa sdf asdf asd f dfa sdf asdf sf s dfas df s fd sdfa sfsadf 
+  - 2
+
+  </div>
+  <div>
+
+  ![](imagen.png)
+
+  </div>
 </div>
 
 
 ---
 
-<div class="columns">
-<div>
+<style >
+.texto:after {
+    content: 'Dos filas, tres columnas';
+  }
+</style>
 
-## Prueba 4
+<div class="rows">
+  <div class="columns" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+  <div>
+  
+   - Col 1
+  </div>
+  <div>
+  
+   - Col 2
+  </div>
+  <div>
+  
+   - Col 3
+  </div>
+  </div>
+  <div class="columns" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+  <div>
 
-- puedad  ds fadfas df f sfa sdf asdf asd f dfa sdf asdf sf s dfas df s fd sdfa sfsadf 
-- 2
+  ![height:200](imagen.png)
+  </div>
+  <div>
 
+  ![height:200](imagen.png)
+  </div>
+  <div>
+
+  ![height:200](imagen.png)
+  </div>
+  </div>
 </div>
-<div>
-
-![](imagen.png)
-
-</div>
-</div>
-
-
-
 
 ---
 
