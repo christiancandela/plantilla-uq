@@ -186,6 +186,13 @@ _footer: ''
 
 ---
 
+<div style="position: absolute; left: 0; top:35%; background-color: rgb(212, 231, 205); width: 100%; display:table-cell; text-align: center; padding: 30px 0;">
+<b>
+<h1>SUB TITULO</h1>
+</b>
+</div>
+
+---
 <style >
 .texto:after {
     content: 'Dos filas, tres columnas';
